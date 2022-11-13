@@ -1,0 +1,9 @@
+---
+# tasks file for docker-registry
+
+   - name : connect to docker hub
+     command : docker login -u nada11 -p 230801dida
+   - name : add tag to image 
+     command : docker tag devops:latest nada11/devops:latest
+   - name : push image to dockerhub 
+     command : docker push nada11/devops
