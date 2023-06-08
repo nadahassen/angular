@@ -7,7 +7,7 @@ pipeline {
                 script{
                     checkout([$class: 'GitSCM' , branches: [[name: '*/master']] ,
                        userRemoteConfigs: [[
-                           credentialsId: 'git-credentials',
+                           credentialsId: 'Github credentials',
                            url :'https://github.com/nadahassen/angular.git']]])
                 }
             
